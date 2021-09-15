@@ -1,0 +1,29 @@
+{
+  "name": "sip2mqtt",
+  "slug": "sip2mqtt",
+  "version": "0.0.1",
+  "description": "A SIP monitoring script that publishes incoming calls with CallerID to an MQTT channel",
+  "startup": "services",
+  "boot": "auto",
+  "options": { 
+    "mqtthost": "core_mosquitto",
+    "mqttport": "1883",
+    "mqttuser": "user",
+    "mqttpass": "pass",
+    "mqtttopic": "sip",
+    "sipdomain": "",
+    "sipuser": "",
+    "sippass": ""
+  },
+  "schema": {
+    "mqtthost": "str",
+    "mqttport": "str",
+    "mqttuser": "str",
+    "mqttpass": "str",
+    "mqtttopic": "str",
+    "sipdomain": "str",
+    "sipuser": "str",
+    "sippass": "str"
+  },
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"]
+}
